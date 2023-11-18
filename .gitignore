@@ -1,0 +1,39 @@
+# Ignore a blackhole and the folder for development
+node_modules/
+.vs/
+.idea/
+*.iml
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Yarn files
+.yarn/install-state.gz
+.yarn/build-state.yml
+
+# Build Artifacts
+dist/
+build/
+test_out/
+*.tsbuildinfo
+*.zip
+*.tar
+*.tar.xz
+*.tar.gz
+*.7z
+*.rar
+
+# Ignore heapsnapshot and log files
+*.heapsnapshot
+*.log
+coverage/
+
+# Ignore package locks
+packages/**/package-lock.json
+
+# Ignore Turbo caching
+.turbo

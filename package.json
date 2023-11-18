@@ -1,0 +1,46 @@
+{
+  "name": "@kakushindev/sapphire-plugins",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Plugins for @sapphire/framework.",
+  "keywords": [
+    "js",
+    "typescript"
+  ],
+  "homepage": "https://kakushin.dev/",
+  "bugs": {
+    "url": "https://github.com/kakushindev/sapphire-plugins/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kakushindev/sapphire-plugins.git"
+  },
+  "license": "AGPL-3.0",
+  "author": "Kakushin Devs <hello@kakushindev.dev>",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "compile": "turbo run build",
+    "clean": "rimraf \"packages/**/dist\" \"packages/**/.turbo\"",
+    "docs": "typedoc",
+    "format": "turbo run format",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "release": "lerna publish from-package --yes"
+  },
+  "devDependencies": {
+    "@sapphire/ts-config": "^5.0.0",
+    "@types/node": "^20.9.0",
+    "lerna": "^7.4.2",
+    "rimraf": "5.0.5",
+    "turbo": "latest",
+    "typedoc": "^0.25.3",
+    "typedoc-plugin-djs-links": "^2.1.1",
+    "typedoc-plugin-mdn-links": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=7.0.0"
+  }
+}
