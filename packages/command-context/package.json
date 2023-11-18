@@ -1,6 +1,6 @@
 {
     "name": "@kakushin/command-context",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Wrapping all sapphire commands (message, interaction) in one context.",
     "homepage": "https://github.com/kakushindev/sapphire-plugins/tree/main/packages/command-context",
     "bugs": {
