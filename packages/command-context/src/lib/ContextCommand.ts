@@ -5,12 +5,13 @@ import { CommandInteractionCommandContext } from "./Structures/CommandInteractio
 import { MessageCommandContext } from "./Structures/MessageCommandContext";
 import type { CommandContext } from "./Structures/CommandContext";
 import { type ChatInputCommandInteraction, type Message, type MessageContextMenuCommandInteraction, UserContextMenuCommandInteraction } from "discord.js";
-import type { CommandOptions, PieceContext } from "@sapphire/framework";
+import type { CommandOptions, LoaderPieceContext } from "@sapphire/framework";
 import type { Awaitable } from "@sapphire/utilities";
+// eslint-disable-next-line no-duplicate-imports
 import { Args, Command } from "@sapphire/framework";
 
 export abstract class ContextCommand extends Command {
-    public constructor(context: PieceContext, options?: CommandOptions | undefined) {
+    public constructor(context: LoaderPieceContext<"commands">, options?: CommandOptions | undefined) {
         super(context, options);
     }
 

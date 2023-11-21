@@ -5,10 +5,10 @@ import { CommandInteractionCommandContext } from "./Structures/CommandInteractio
 import { MessageCommandContext } from "./Structures/MessageCommandContext";
 import type { CommandContext } from "./Structures/CommandContext.js";
 import { type ChatInputCommandInteraction, type Message, type MessageContextMenuCommandInteraction, UserContextMenuCommandInteraction } from "discord.js";
-import { Piece, Precondition } from "@sapphire/framework";
+import { LoaderPieceContext, Precondition } from "@sapphire/framework";
 
 export abstract class ContextPrecondition extends Precondition {
-    public constructor(context: Piece.Context, options?: Precondition.Options) {
+    public constructor(context: LoaderPieceContext<"preconditions">, options?: Precondition.Options) {
         super(context, options);
     }
 
