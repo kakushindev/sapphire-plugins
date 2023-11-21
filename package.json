@@ -27,12 +27,12 @@
     "format": "turbo run format",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
-    "release": "lerna publish from-package --yes"
+    "release": "turbo run build && changeset version && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "@sapphire/ts-config": "^5.0.0",
     "@types/node": "^20.9.0",
-    "lerna": "^7.4.2",
     "rimraf": "5.0.5",
     "turbo": "latest",
     "typedoc": "^0.25.3",
