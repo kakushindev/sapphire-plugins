@@ -1,0 +1,9 @@
+.turbo
+node_modules/
+src/
+tests/
+.prettierignore
+CHANGELOG.md
+jest.config.ts
+rollup.bundle.mjs
+tsconfig.eslint.json

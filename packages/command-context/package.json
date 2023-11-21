@@ -23,11 +23,6 @@
     "main": "dist/index.js",
     "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
-    "files": [
-        "dist/**/*.js*",
-        "dist/**/*.mjs*",
-        "dist/**/*.d*"
-    ],
     "scripts": {
         "build": "rimraf dist && tsc -b src && rollup -c rollup.bundle.mjs && npm run esm:default",
         "esm:default": "gen-esm-wrapper dist/index.js dist/index.mjs",
