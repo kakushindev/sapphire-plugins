@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/kakushindev/sapphire-plugins/compare/v1.1.0...v1.1.1) (2023-11-21)
+
+
+### Bug Fixes
+
+* use npmignore instead ([351ba8e](https://github.com/kakushindev/sapphire-plugins/commit/351ba8e81b403c56ae50b74e55902b27a935da41))
+
+
+
+
+
 # [1.1.0](https://github.com/kakushindev/sapphire-plugins/compare/v1.0.0...v1.1.0) (2023-11-21)
 
 

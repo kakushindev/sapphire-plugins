@@ -1,6 +1,6 @@
 {
     "name": "@kakushin/pino-logger",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Plugins for @sapphire/framework to have pino logger.",
     "homepage": "https://github.com/kakushindev/sapphire-plugins/tree/main/packages/pino-logger",
     "bugs": {
