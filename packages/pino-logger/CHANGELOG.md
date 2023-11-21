@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/kakushindev/sapphire-plugins/compare/v1.0.0...v1.1.0) (2023-11-21)
+
+
+### Features
+
+* bump all sapphire deps ([e56c2e1](https://github.com/kakushindev/sapphire-plugins/commit/e56c2e13f965340c932a415c4ce821c4641b984f))
+
+
+
+
+
 # 1.0.0 (2023-11-18)
 
 
