@@ -11,7 +11,10 @@ import type { Awaitable } from "@sapphire/utilities";
 import { Args, Command } from "@sapphire/framework";
 
 export abstract class ContextCommand extends Command {
-    public constructor(context: LoaderPieceContext<"commands">, options?: CommandOptions | undefined) {
+    public constructor(
+        context: LoaderPieceContext<"commands">,
+        options?: CommandOptions | undefined
+    ) {
         super(context, options);
     }
 

@@ -5,8 +5,7 @@ import type { ClientOptions } from "discord.js";
 import type { LoggerOptions } from "pino";
 
 export class PinoLoggerPlugin extends Plugin {
-    // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-    public static[preGenericsInitialization](this: SapphireClient, options: ClientOptions) {
+    public static[preGenericsInitialization](this: SapphireClient, options: ClientOptions): void {
         options.logger ??= {
             pino: {}
         };
