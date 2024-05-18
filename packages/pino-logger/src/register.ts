@@ -1,12 +1,11 @@
 /* eslint-disable @typescript-eslint/consistent-type-imports */
 import { PinoLogger } from "./lib/PinoLogger";
-import { Plugin, preGenericsInitialization, SapphireClient } from "@sapphire/framework";
-import type { ClientOptions } from "discord.js";
+import { Plugin, preGenericsInitialization, SapphireClient, SapphireClientOptions } from "@sapphire/framework";
 import type { LoggerOptions } from "pino";
 
 export class PinoLoggerPlugin extends Plugin {
     // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-    public static[preGenericsInitialization](this: SapphireClient, options: ClientOptions) {
+    public static[preGenericsInitialization](this: SapphireClient, options: SapphireClientOptions) {
         options.logger ??= {
             pino: {}
         };

@@ -2,6 +2,7 @@
 import "tslib";
 import type { ILogger } from "@sapphire/framework";
 import type { Logger, LoggerOptions } from "pino";
+// eslint-disable-next-line no-duplicate-imports
 import pino from "pino";
 
 export class PinoLogger implements ILogger {
